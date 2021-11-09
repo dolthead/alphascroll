@@ -1,0 +1,7 @@
+{
+  "name": "alphascroll",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
