@@ -21,7 +21,7 @@
   </ion-header>
 
   <ion-item-group *ngFor="let group of groupedData">
-    <ion-item-divider sticky>
+    <ion-item-divider>
       <ion-label>
         {{ group.key }}
       </ion-label>
@@ -33,6 +33,6 @@
     </ion-item>
   </ion-item-group>
 
-  <app-alphabet-scroll (letterSelected)="scrollToLetter($event)" (scrollingLetter)="scrolling($event)"></app-alphabet-scroll>
+  <app-alphabet-scroll (letterSelected)="scrollToLetter($event)" (scrollingLetter)="scrolling($event)" (touchmove)="$event.preventDefault()"></app-alphabet-scroll>
 
 </ion-content>
